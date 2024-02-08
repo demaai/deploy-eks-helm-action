@@ -54,7 +54,7 @@ inputs:
     timeout:
         description: 'Timeout for the job.'
         required: true
-        default: "0s"
+        default: "300s"
     update-deps:
         description: 'Update chart dependencies'
         required: false
@@ -65,6 +65,7 @@ inputs:
     helm-wait:
         description: 'Add the --wait flag to helm'
         required: false
+        default: "true"
     atomic:
         description: 'Add the --atomic flag to rollback on failure'
         required: false
